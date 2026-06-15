@@ -105,5 +105,26 @@
     </footer>
 
     <script src="script.js"></script>
+    <div id="productDetailModal" class="auth-modal" style="display: none;">
+    <div class="auth-content" style="max-width: 500px;">
+        <span class="close" onclick="closeDetailModal()">&times;</span>
+        
+        <div style="text-align: center;">
+            <img id="detailImg" src="" alt="" style="width: 100%; max-height: 250px; object-fit: contain; border-radius: 8px;">
+            <h2 id="detailName" style="margin-top: 15px; color: #333;"></h2>
+            <p id="detailPrice" style="font-size: 1.2rem; color: #ff6b81; font-weight: bold;"></p>
+            
+            <div style="background: #f8f9fa; padding: 10px; border-radius: 6px; margin: 15px 0;">
+                <span style="font-weight: bold; color: #555;">Tình trạng kho: </span>
+                <span id="detailStock" style="font-weight: bold; color: #2ed573;"></span>
+            </div>
+            
+            <p id="detailDesc" style="color: #666; font-size: 0.95rem; line-height: 1.5; text-align: left;"></p>
+            
+            <div id="detailActionBtn" style="margin-top: 20px;">
+                </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
