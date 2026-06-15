@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Store - Website Bán Mỹ Phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">GlowBeauty</div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="https://google.com" target="_blank">Tìm Kiếm Thêm</a></li> <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 Giỏ Hàng (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Nâng Niu Làn Da Việt</h2>
+            <p>Khám phá các dòng sản phẩm thuần chay, lành tính giảm giá đến 30%.</p>
+            <a href="#products" class="btn">Mua Ngay</a>
+        </div>
+    </section>
+
+    <main id="products">
+        <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="images/mypham1.jpg" alt="Son môi cao cấp">
+                <h3>Son Môi Cấp Ẩm Matte</h3>
+                <p class="price">350.000 đ</p>
+                <a href="https://shopee.vn" target="_blank" class="detail-link">Xem chi tiết trên Shopee</a>
+                <button onclick="addToCart('Son Môi Cấp Ẩm Matte', 350000)">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/mypham2.jpg" alt="Serum dưỡng da">
+                <h3>Serum Phục Hồi Da B5</h3>
+                <p class="price">490.000 đ</p>
+                <a href="https://shopee.vn" target="_blank" class="detail-link">Xem chi tiết trên Shopee</a>
+                <button onclick="addToCart('Serum Phục Hồi Da B5', 490000)">Thêm vào giỏ</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h3>Giỏ Hàng Của Bạn</h3>
+            <ul id="cart-items">
+                </ul>
+            <p><strong>Tổng tiền: <span id="cart-total">0</span> đ</strong></p>
+            <button class="btn-checkout" onclick="checkout()">Thanh Toán Ngay</button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>© 2026 GlowBeauty - Website Báo Cáo Môn Học</p>
+        <p>Theo dõi chúng tôi tại: 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
